@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React, { useState, useEffect } from 'react';
+import ClipLoader from "react-spinners/ClipLoader";
+import Test from './components/Test';
+import Todolist from './components/Todolist';
+import Prac from './components/Prac'
+import SplashScreen from './components/SplashScreen';
+import './App.css';
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+   
+    <SplashScreen duration={4000}/>
+    <Prac className="w-full max-w-md p-6 bg-white rounded-lg shadow-xl"/>
+
+
+    </>
   );
 }
 
